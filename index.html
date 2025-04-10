@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="nl">
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -15,10 +16,10 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domain te Koop</title>
+    <title>Domain for sale</title>
     <style>
         body {
-            background-color: navy;
+            background-color: darkblue;
             margin: 0;
             height: 100vh;
             display: flex;
@@ -27,26 +28,44 @@
         }
         
         .content {
+            display: flex; /* Flexbox om afbeelding en tekst naast elkaar te plaatsen */
+            align-items: center; /* Verticaal centreren */
             color: white;
-            text-align: center;
-            font-family: serif; /* Serif-lettertype */
+            text-align: left; /* Tekst links uitlijnen binnen de tekstcontainer */
+        }
+        
+        .text-container {
+            margin-left: 20px; /* Ruimte tussen afbeelding en tekst */
         }
         
         .title {
-            font-size: 36px; /* Grotere tekst voor de titel */
+            font-family: serif; /* Serif voor de titel */
+            font-size: 36px;
             text-transform: uppercase; /* Hoofdletters */
+            vertical-align: sub; /* Maakt de titel subscript */
+            margin: 0; /* Verwijder standaardmarges van de p-tag */
+			
         }
         
         .contact {
-		font-family: sans-serif;
-            font-size: 24px; /* Iets kleiner voor contact */
+            font-family: sans-serif; /* Sans-serif voor contact */
+            font-size: 24px;
+            margin: 0; /* Verwijder standaardmarges van de p-tag */
+        }
+        
+        .ashbie-img {
+            max-width: 200px; /* Aanpassen naar gewenste grootte */
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <p class="title">Domain for sale</p>
-        <p class="contact">Contact: kosferdi@gmail.com</p>
+        <img src="/ashbie.png" alt="Cartoon Ashbie" class="ashbie-img">
+        <div class="text-container">
+            <p class="title">Domain for sale</p>
+            <p class="contact">Contact: kosferdi@gmail.com</p>
+        </div>
     </div>
 </body>
 </html>
